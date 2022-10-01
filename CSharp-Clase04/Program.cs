@@ -5,7 +5,7 @@
 Console.WriteLine("Ingrese un numero entero:");
 int numero = int.Parse(Console.ReadLine());
 int multiplicador = 1;
-while (multiplicador <= 10)
+while(multiplicador <= 10)
 {
     Console.WriteLine($"{numero} x {multiplicador} = {numero * multiplicador}");
     multiplicador++;
@@ -18,12 +18,12 @@ do
 {
     Console.WriteLine("Ingrese un numero:");
     texto = Console.ReadLine();
-    int numero = 0;
-    if (int.TryParse(texto, out numero))
+    int numero2 = 0;
+    if (int.TryParse(texto, out numero2))
     {
-        if (numero > 0)
+        if (numero2 > 0)
             Console.WriteLine("Es positivo");
-        else if (numero == 0)
+        else if (numero2 == 0)
             Console.WriteLine("Es cero");
         else
             Console.WriteLine("Es negativo");
@@ -80,33 +80,33 @@ for (int q = 0; q < alto; q++)
 //Reto:
 
 Console.WriteLine("Ingrese el ancho:");
-int ancho = int.Parse(Console.ReadLine());
+int ancho2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese el alto:");
-int alto = int.Parse(Console.ReadLine());
+int alto2 = int.Parse(Console.ReadLine());
 
 
 Console.WriteLine("Ingrese el numero de divisiones:");
 int divisiones = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Relleno?:");
-bool esRelleno = bool.Parse(Console.ReadLine());
+bool esRelleno2 = bool.Parse(Console.ReadLine());
 
-for (int q = 0; q < alto; q++)
+for (int q = 0; q < alto2; q++)
 {
     for(int j = 0; j < divisiones; j++)
     {
-        if (esRelleno)
+        if (esRelleno2)
         {
-            for (int i = 0; i < ancho; i++)
+            for (int i = 0; i < ancho2; i++)
             {
                 Console.Write("*");
             }
         }
         else
         {
-            if (q == 0 || q == alto - 1)
+            if (q == 0 || q == alto2 - 1)
             {
-                for (int i = 0; i < ancho; i++)
+                for (int i = 0; i < ancho2; i++)
                 {
                     Console.Write("*");
                 }
@@ -114,7 +114,7 @@ for (int q = 0; q < alto; q++)
             else
             {
                 Console.Write("*");
-                for (int i = 1; i < ancho - 1; i++)
+                for (int i = 1; i < ancho2 - 1; i++)
                 {
                     Console.Write(" ");
                 }
